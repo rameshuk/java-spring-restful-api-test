@@ -16,8 +16,6 @@ public class PersonTest {
     public void idsShouldBeDifferent() {
         Person classUnderTest1 = new Person("John", "Smith");
         Person classUnderTest2 = new Person("Harry", "Brown");
-        System.out.println(classUnderTest1.getId());
-        System.out.println(classUnderTest2.getId());
 
         assertFalse(classUnderTest1.getId().equals(classUnderTest2.getId()));
     }
