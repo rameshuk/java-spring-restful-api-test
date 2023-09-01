@@ -1,12 +1,15 @@
 package uk.co.huntersix.spring.rest.model;
 
+import javax.validation.constraints.NotEmpty;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Person {
-    private final AtomicLong counter = new AtomicLong();
+    private static final AtomicLong counter = new AtomicLong();
 
     private Long id;
+    @NotEmpty
     private String firstName;
+    @NotEmpty
     private String lastName;
 
     private Person() {
